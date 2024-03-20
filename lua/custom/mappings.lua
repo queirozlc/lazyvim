@@ -11,5 +11,11 @@ map("n", "<m-k>", "<C-w>k", opts)
 map("n", "<m-l>", "<C-w>l", opts)
 map("n", "<m-tab>", "<c-6>", opts)
 map("n", "<leader>gb", "<cmd>GitBlameToggle<CR>", opts)
-map("n", "<leader>un", "<cmd>NoiceDismiss <CR>", { desc = "Dismiss Noice Notifications", table.unpack(opts) })
-map("n", "<leader>O", "<cmd>Oil --float<CR>", { desc = "Open Oil", table.unpack(opts) })
+map(
+  "n",
+  "<leader>un",
+  "<cmd>NoiceDismiss <CR>",
+  { desc = "Dismiss Noice Notifications", noremap = true, silent = true }
+)
+-- extend the opts table to insert desc
+map("n", "-", "<cmd>Oil<CR>", { desc = "Open Oil", noremap = true, silent = true })
