@@ -18,4 +18,6 @@ map(
   { desc = "Dismiss Noice Notifications", noremap = true, silent = true }
 )
 -- extend the opts table to insert desc
-map("n", "-", "<cmd>Oil<CR>", { desc = "Open Oil", noremap = true, silent = true })
+map("n", "<leader>O", "<cmd>Oil<CR>", { desc = "Open Oil", noremap = true, silent = true })
+
+map("n", "Q", "<cmd>%bd<CR>", { desc = "Close all buffers", noremap = true, silent = true })
