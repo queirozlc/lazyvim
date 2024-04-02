@@ -18,6 +18,10 @@ map(
   { desc = "Dismiss Noice Notifications", noremap = true, silent = true }
 )
 -- extend the opts table to insert desc
-map("n", "<leader>O", "<cmd>Oil<CR>", { desc = "Open Oil", noremap = true, silent = true })
+map("n", "<leader>O", "<cmd>Oil --float<CR>", { desc = "Open Oil", noremap = true, silent = true })
 
 map("n", "Q", "<cmd>%bd<CR>", { desc = "Close all buffers", noremap = true, silent = true })
+
+-- Move what is under cursor up and down
+map("n", "<A-k>", "<cmd>m .-2<CR>==", opts)
+map("n", "<A-j>", "<cmd>m .+1<CR>==", opts)
