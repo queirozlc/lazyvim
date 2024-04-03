@@ -1,9 +1,7 @@
 return {
   "f-person/git-blame.nvim",
-  event = "BufReadPost",
+  cmd = "GitBlameToggle",
   config = function()
-    require("gitblame").setup({
-      enable = true,
-    })
+    require("gitblame").setup({})
   end,
 }
