@@ -2,9 +2,9 @@
   "LazyVim": { "branch": "main", "commit": "5646ee5191da244ff8ea57b9dba8a7e0d1dbdd42" },
   "LuaSnip": { "branch": "master", "commit": "825a61bad1d60d917a7962d73cf3c683f4e0407e" },
   "SchemaStore.nvim": { "branch": "main", "commit": "20ceee9ede7cb68ce01dc45a7d5924cefc9aa671" },
-  "aquarium": { "branch": "develop", "commit": "d09b1feda1148797aa5ff0dbca8d8e3256d028d5" },
   "ayu": { "branch": "master", "commit": "0745635421688ce777f663d13531996cb4da6514" },
   "base16": { "branch": "master", "commit": "b3e9ec6a82c05b562cd71f40fe8964438a9ba64a" },
+  "base46": { "branch": "main", "commit": "9b142cf7ecef300d6e66f05ed8ae77f4e358bfcd" },
   "bufferline.nvim": { "branch": "main", "commit": "64e2c5def50dfd6b6f14d96a45fa3d815a4a1eef" },
   "catppuccin": { "branch": "main", "commit": "aebe43db9cb26e1c70fc5b2fd4158169c405e720" },
   "cmp-buffer": { "branch": "main", "commit": "3022dbc9166796b644a841a02de8dd1cc1d311fa" },
@@ -74,7 +74,6 @@
   "venv-selector.nvim": { "branch": "main", "commit": "3c57922256e7e26205a25f5a42ecf7104d9f2c78" },
   "vesper.nvim": { "branch": "main", "commit": "43d2377f43a228a99429d691050d3f4879855d14" },
   "vim-illuminate": { "branch": "master", "commit": "305bf07b919ac526deb5193280379e2f8b599926" },
-  "vim-kitty": { "branch": "main", "commit": "4f3f2901717320f80a1e16a868f706762be8535b" },
   "vim-startuptime": { "branch": "master", "commit": "ac2cccb5be617672add1f4f3c0a55ce99ba34e01" },
   "which-key.nvim": { "branch": "main", "commit": "4433e5ec9a507e5097571ed55c02ea9658fb268a" }
 }
