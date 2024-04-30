@@ -26,13 +26,12 @@ return {
     end,
   },
   { "datsfilipe/vesper.nvim", lazy = false },
-  { "ayu-theme/ayu-vim", name = "ayu" },
-  { "notken12/base46-colors", name = "base46" },
+  -- { "notken12/base46-colors", name = "base46" },
   { "RRethy/base16-nvim", name = "base16" },
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "rxyhn",
+      colorscheme = "catppuccin",
     },
   },
 }
