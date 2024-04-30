@@ -1,7 +1,17 @@
+local filetypes = {
+  "html",
+  "javascript",
+  "typescript",
+  "javascriptreact",
+  "typescriptreact",
+}
+
 return {
   "windwp/nvim-ts-autotag",
-  ft = { "html", "javascript", "typescript", "javascriptreact", "typescriptreact" },
+  ft = filetypes,
   config = function()
-    require("nvim-ts-autotag").setup()
+    require("nvim-ts-autotag").setup({
+      filetypes = filetypes,
+    })
   end,
 }
