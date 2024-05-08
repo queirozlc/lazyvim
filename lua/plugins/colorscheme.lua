@@ -1,9 +1,9 @@
 return {
-  { "nyoom-engineering/oxocarbon.nvim" },
   {
     "rose-pine/neovim",
     name = "rose-pine",
     lazy = false,
+    enable = false,
     config = function()
       return require("rose-pine").setup({
         variant = "auto", -- auto, main, moon, or dawn
@@ -18,20 +18,20 @@ return {
         },
 
         styles = {
-          bold = false,
+          bold = true,
           italic = false,
-          transparency = true,
+          transparency = false,
         },
       })
     end,
   },
   { "datsfilipe/vesper.nvim", lazy = false },
-  -- { "notken12/base46-colors", name = "base46" },
+  { "notken12/base46-colors", name = "base46" },
   { "RRethy/base16-nvim", name = "base16" },
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "catppuccin",
+      colorscheme = "aquarium",
     },
   },
 }
