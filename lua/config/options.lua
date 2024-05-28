@@ -3,4 +3,4 @@
 -- Add any additional options here
 vim.opt.wrap = true
 -- set guicursor as a block always
-vim.opt.guicursor = "i:block"
+-- vim.opt.guicursor = "i:block"

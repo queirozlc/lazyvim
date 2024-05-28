@@ -12,6 +12,16 @@ return {
           },
         },
       },
+      tsserver = {
+        settings = {
+          typescript = {
+            inlayHints = false,
+          },
+        },
+      },
+    },
+    inlay_hints = {
+      enable = false,
     },
   },
 }

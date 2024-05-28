@@ -25,3 +25,6 @@ map("n", "Q", "<cmd>%bd<CR>", { desc = "Close all buffers", noremap = true, sile
 -- Move what is under cursor up and down
 map("n", "<A-k>", "<cmd>m .-2<CR>==", opts)
 map("n", "<A-j>", "<cmd>m .+1<CR>==", opts)
+
+-- Disable Recording Macro
+map("n", "q", "<Nop>", { noremap = true, silent = true })
