@@ -3,6 +3,7 @@ return {
   event = "VeryLazy",
   config = function()
     require("oil").setup({
+      default_file_explorer = false,
       float = {
         max_height = 20,
         max_width = 60,
