@@ -28,3 +28,5 @@ map("n", "<A-j>", "<cmd>m .+1<CR>==", opts)
 
 -- Disable Recording Macro
 map("n", "q", "<Nop>", { noremap = true, silent = true })
+
+map("n", "<leader>k", "<cmd>LazyDocker<CR>", { desc = "Lazy Docker 🐳", noremap = true, silent = true })
