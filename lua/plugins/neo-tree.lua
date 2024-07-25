@@ -59,7 +59,7 @@ return {
         },
       },
       window = {
-        position = "right",
+        position = "left",
         width = 35,
       },
       filesystem = {

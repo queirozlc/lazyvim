@@ -2,6 +2,7 @@
   "extras": [
     "lazyvim.plugins.extras.coding.copilot",
     "lazyvim.plugins.extras.coding.copilot-chat",
+    "lazyvim.plugins.extras.coding.luasnip",
     "lazyvim.plugins.extras.coding.mini-surround",
     "lazyvim.plugins.extras.coding.yanky",
     "lazyvim.plugins.extras.dap.core",
@@ -13,6 +14,8 @@
     "lazyvim.plugins.extras.lang.docker",
     "lazyvim.plugins.extras.lang.elixir",
     "lazyvim.plugins.extras.lang.elm",
+    "lazyvim.plugins.extras.lang.go",
+    "lazyvim.plugins.extras.lang.java",
     "lazyvim.plugins.extras.lang.json",
     "lazyvim.plugins.extras.lang.markdown",
     "lazyvim.plugins.extras.lang.omnisharp",
@@ -30,7 +33,7 @@
     "lazyvim.plugins.extras.vscode"
   ],
   "news": {
-    "NEWS.md": "6077"
+    "NEWS.md": "6520"
   },
   "version": 6
 }

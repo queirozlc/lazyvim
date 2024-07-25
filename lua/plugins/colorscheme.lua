@@ -3,6 +3,7 @@ return {
     "oxfist/night-owl.nvim",
     lazy = true, -- make sure we load this during startup if it is your main colorscheme
     priority = 1000, -- make sure to load this before all the other start plugins
+    enable = false,
     name = "night-owl",
     config = function()
       require("night-owl").setup()
@@ -91,7 +92,7 @@ return {
   },
   { "datsfilipe/vesper.nvim", lazy = false },
   -- { "notken12/base46-colors", name = "base46" },
-  { "RRethy/base16-nvim", name = "base16" },
+  -- { "RRethy/base16-nvim", name = "base16" },
   {
     "LazyVim/LazyVim",
     opts = {
@@ -101,14 +102,6 @@ return {
 }
 
 -- return {
---   {
---     "LazyVim/LazyVim",
---     opts = {
---       colorscheme = "kanagawa",
---     },
---   },
---   { "RRethy/base16-nvim", name = "base16" },
---   { "rebelot/kanagawa.nvim", name = "kanagawa", lazy = false },
 --   {
 --     "oxfist/night-owl.nvim",
 --     lazy = true, -- make sure we load this during startup if it is your main colorscheme
