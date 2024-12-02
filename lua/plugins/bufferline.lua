@@ -40,15 +40,15 @@ return {
           show_tab_indicators = true,
           persist_buffer_sort = true,
           separator_style = "blank",
-          -- custom_areas = {
-          -- 	left = function()
-          -- 		return {
-          -- 			{ text = "    ", guifg = "#18bd9d", guibg = "#1e222a" },
-          -- 		}
-          -- 	end,
-          -- },
+          custom_areas = {
+            left = function()
+              return {
+                { text = "    ", guifg = "#18bd9d", guibg = "#272822" },
+              }
+            end,
+          },
           enforce_regular_tabs = false,
-          always_show_bufferline = true,
+          always_show_bufferline = false,
           sort_by = "extension",
           highlights = {
             background = {
@@ -74,6 +74,12 @@ return {
             },
             modified_selected = {
               guifg = { attribute = "fg", highlight = "WinSeparator" },
+            },
+            fill = {
+              guibg = "#272822",
+            },
+            buffer_selected = {
+              guibg = "#272822",
             },
           },
         },

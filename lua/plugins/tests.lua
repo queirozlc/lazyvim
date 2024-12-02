@@ -5,6 +5,7 @@ return {
     dependencies = {
       "haydenmeade/neotest-jest",
       "marilari88/neotest-vitest",
+      "antoinemadec/FixCursorHold.nvim",
     },
     opts = function(_, opts)
       table.insert(
@@ -26,6 +27,14 @@ return {
         })
       )
       table.insert(opts.adapters, require("neotest-vitest"))
+      -- change table in path opts.output.open_on_run to false
+      opts.output = vim.tbl_deep_extend("force", opts.output, {
+        open_on_run = false,
+      })
+
+      opts.quickfix = vim.tbl_deep_extend("force", opts.quickfix, {
+        open = false,
+      })
     end,
   },
 }

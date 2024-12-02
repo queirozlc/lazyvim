@@ -69,6 +69,7 @@ return {
           hide_gitignored = true,
           hide_by_name = {
             "node_modules",
+            "index.android.bundle",
           },
           never_show = {
             ".DS_Store",
