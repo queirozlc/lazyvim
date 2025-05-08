@@ -5,4 +5,10 @@ return {
       yaml = true,
     },
   },
+  {
+    "CopilotC-Nvim/CopilotChat.nvim",
+    opts = {
+      model = "claude-3.7-sonnet-thought",
+    },
+  },
 }

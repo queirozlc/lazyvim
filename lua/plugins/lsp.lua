@@ -19,6 +19,18 @@ return {
           },
         },
       },
+      emmet_language_server = {
+        filetypes = {
+          "css",
+          "eruby",
+          "html",
+          "heex",
+          "javascript",
+          "javascriptreact",
+          "scss",
+          "typescriptreact",
+        },
+      },
       vtsls = {
         settings = {
           typescript = {
@@ -33,19 +45,32 @@ return {
           },
         },
       },
-      elixirls = {
-        enabled = false,
+      clangd = {
+        cmd = {
+          "clangd",
+          "--background-index",
+          "--clang-tidy",
+          "--header-insertion=iwyu",
+          "--completion-style=detailed",
+          "--function-arg-placeholders",
+          "--fallback-style=llvm",
+          -- set query driver option to include homebrew header
+          "--query-driver=/opt/homebrew/include,/opt/homebrew/bin",
+        },
       },
-      lexical = {
-        cmd = { "/Users/lucasqueiroz/lexical/_build/dev/package/lexical/bin/start_lexical.sh" },
-        root_dir = function(fname)
-          local lspconfig = require("lspconfig")
-          return lspconfig.util.root_pattern("mix.exs", ".git")(fname) or vim.loop.os_homedir()
-        end,
-        filetypes = { "elixir", "eelixir", "heex" },
-        -- optional settings
-        settings = {},
-      },
+      -- elixirls = {
+      --   enabled = false,
+      -- },
+      -- lexical = {
+      --   cmd = { "/Users/lucasqueiroz/lexical/_build/dev/package/lexical/bin/start_lexical.sh" },
+      --   root_dir = function(fname)
+      --     local lspconfig = require("lspconfig")
+      --     return lspconfig.util.root_pattern("mix.exs", ".git")(fname) or vim.loop.os_homedir()
+      --   end,
+      --   filetypes = { "elixir", "eelixir", "heex" },
+      --   -- optional settings
+      --   settings = {},
+      -- },
     },
 
     inlay_hints = {

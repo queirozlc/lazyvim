@@ -4,7 +4,6 @@ local opts = { noremap = true, silent = true }
 -- Neo Tree
 
 -- Focus NeoTree
-map("n", "<leader>m", "<cmd>Neotree toggle left<CR>", opts)
 map("n", "<m-h>", "<C-w>h", opts)
 map("n", "<m-j>", "<C-w>j", opts)
 map("n", "<m-k>", "<C-w>k", opts)
